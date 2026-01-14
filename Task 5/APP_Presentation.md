@@ -22,59 +22,76 @@
 ---
 
 ## 3. Solution 🛠️
-- Веб-інтерфейс для: створення бронювання (ім'я, контакт, дата, час, тип поломки, нотатки), перевірки конфліктів (з буфером), редагування, видалення, фільтрації, пагінації та експорту CSV.
-- Проста локальна інсталяція (Python + Streamlit) з можливістю подальшого перенесення на сервер чи хмару.
+- Web interface for creating bookings (name, contact, date, time, issue type, notes), conflict checking (with optional buffer), editing, deleting, filtering, pagination, and CSV export.
+- Simple local installation (Python + Streamlit) with an easy migration path to a server or cloud deployment.
 
 ---
 
 ## 4. Framework ⚙️
 ### a. Technology / Prototype
-- **Stack:** Python 3, Streamlit, CSV (локальне зберігання); файли: `streamlit_service_app.py`, `appointments.csv`.
-- **Prototype:** робочий MVP у папці `Task 5`.
+- **Stack:** Python 3, Streamlit, CSV (local storage); files: `streamlit_service_app.py`, `appointments.csv`.
+- **Prototype:** Working MVP in the `Task 5` folder.
 
 ### b. Application Screening process
-- Валідація полів (ім'я, контакт), перевірка дати (не в минулому), перевірка на конфлікти з опціональним буфером.
-
-### c. Value proposition
-- Швидке впровадження, низька вартість, інтуїтивний інтерфейс, зручний експорт даних і базис для інтеграцій.
+- Field validation (name, contact), date validation (not in the past), and conflict checking with optional buffer minutes.
 
 ---
 
-## 5. Analysis 📊
-### a. Market segmentation
-- Малий/середній автосервіс (1–10 майстрів)
-- Локальні мережі сервісів
-- Флот-менеджери (комерційний парк)
-- Кінцеві клієнти (зручність бронювання)
+## Screenshots & Demo 🎬
+- Code snippet (core booking logic) — see `assets/code.png`.
+- Booking flow: fill form and submit — see `assets/booking.png`.
+- Editing a booking — see `assets/edit.png`.
+- Deleting a booking (confirmation) — see `assets/delete.png`.
 
-### b. SWOT analysis
-- **Strengths:** швидкий MVP, простота, низькі витрати
-- **Weaknesses:** обмежена масштабованість при CSV, відсутність багатокористувацького доступу
-- **Opportunities:** інтеграції (календар, SMS, оплатa), SaaS-модель
-- **Threats:** конкуренти з готовими комплексними CRM/ERP, безпекові вимоги
+![Code screenshot](assets/code.png)
 
-### c. Marketing communication strategy
-- Канали: локальна реклама, Google My Business, Facebook/Instagram, партнерства з постачальниками запчастин.
-- Повідомлення: «Просто бронюй, менше пропущених клієнтів», кейси «збільшення продуктивності».
+![Booking screenshot](assets/booking.png)
 
-### d. Product portfolio
-- **Free / Local** — базові функції, CSV.
-- **Pro** — база даних, багатокористувацький доступ, календарна синхронізація, SMS-сповіщення.
-- **Enterprise** — API, інтеграція з обліком, SLA.
+![Editing screenshot](assets/edit.png)
 
-### e. Organization structure
+![Deleting screenshot](assets/delete.png)
+
+### c. Value proposition
+- Fast time-to-deploy, low cost, intuitive UI, easy data export, and a foundation for integrations.
+
+---
+
+## 5. Market segmentation
+- Small/medium repair shops (1–10 technicians)
+- Local service chains
+- Fleet managers (commercial fleets)
+- End customers (convenient booking)
+
+## 6. SWOT analysis
+- **Strengths:** fast MVP, simplicity, low costs
+- **Weaknesses:** limited scalability when using CSV, no multi-user access
+- **Opportunities:** integrations (calendar, SMS, payments), SaaS model
+- **Threats:** competitors with full CRM/ERP suites, security and compliance requirements
+
+## 7. Marketing & Product
+### Marketing communication strategy
+- Channels: local advertising, Google My Business, Facebook/Instagram, partnerships with parts suppliers.
+- Message: "Book easily, fewer missed customers"; highlight case studies showing improved productivity.
+
+### Product portfolio
+- **Free / Local** — basic features, CSV storage.
+- **Pro** — database backend, multi-user access, calendar sync, SMS notifications.
+- **Enterprise** — API, accounting integration, SLA.
+
+## 8. Organization, Finance & Roadmap
+### Organization structure
 - Small start: Product Owner / Developer, 1–2 Developers, Support/Customer Success, Marketing & Sales.
 
-### f. Financial plan (high-level)
-- **Доходи:** підписка Pro (місяць/рік), плата за впровадження, платні інтеграції.
-- **Витрати:** розробка, хостинг, маркетинг, підтримка.
-- Простий прогноз: точка беззбитковості при ~200 Pro-користувачів (залежить від ціноутворення).
+### Financial plan (high-level)
+- **Revenue:** Pro subscription (monthly/yearly), setup fees, paid integrations.
+- **Costs:** development, hosting, marketing, support.
+- Simple projection: breakeven at ~200 Pro users (depends on pricing).
 
-### g. Business development roadmap
-- Q1: MVP & локальні пілоти
-- Q2: Функції Pro (DB, auth), тестування інтеграцій
-- Q3: Запуск платної підписки, маркетинг
-- Q4: Масштабування, партнерства та B2B продажі
+### Business development roadmap
+- Q1: MVP & local pilots
+- Q2: Pro features (DB, auth), integration testing
+- Q3: Launch paid subscription, marketing
+- Q4: Scale, partnerships, and B2B sales
 
 ---
 
