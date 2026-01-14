@@ -104,13 +104,24 @@ for sec in sections[1:]:
         img_m = re.match(r"!\[.*\]\((.*)\)", ln)
         if img_m:
             img_path = img_m.group(1)
-            img_file = ASSETS / img_path if not Path(img_path).is_absolute() else Path(img_path)
+            ip = Path(img_path)
+            if ip.is_absolute():
+                img_file = ip
+            else:
+                # support markdown paths like 'assets/code.png' or just 'code.png'
+                parts = ip.parts
+                if parts and parts[0] == 'assets':
+                    img_file = ASSETS.joinpath(*parts[1:])
+                else:
+                    img_file = ASSETS / ip
             if img_file.exists():
                 # place picture on the right side
                 pic_left = Inches(7.0)
                 pic_top = Inches(1.3)
                 pic_w = Inches(2.8)
                 slide.shapes.add_picture(str(img_file), pic_left, pic_top, width=pic_w)
+            else:
+                print(f"Warning: image not found: {img_file}")
             continue
         # headings inside section
         if ln.startswith('###'):

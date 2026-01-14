@@ -39,13 +39,16 @@
 
 ## Screenshots & Demo 🎬
 - Code snippet (core booking logic) — see `assets/code.png`.
-- Booking flow: fill form and submit — see `assets/booking.png`.
-- Editing a booking — see `assets/edit.png`.
-- Deleting a booking (confirmation) — see `assets/delete.png`.
+- Booking flow: fill form and submit — see `assets/booking_real.png`.
+- Booking list view (shows saved appointments) — see `assets/list_real.png`.
+- Editing a booking — see `assets/edit.png` (mock) or `assets/edit_real.png` (attempted real capture).
+- Deleting a booking (confirmation) — see `assets/delete.png` (mock).
 
 ![Code screenshot](assets/code.png)
 
-![Booking screenshot](assets/booking.png)
+![Booking screenshot](assets/booking_real.png)
+
+![Booking list screenshot](assets/list_real.png)
 
 ![Editing screenshot](assets/edit.png)
 
@@ -95,9 +98,9 @@
 
 ---
 
-## 6. Conclusion 🏁
-- Підсумок: Додаток закриває конкретну болючу точку для малого автосервісу — просте, швидке та дешеве бронювання з базовими інструментами керування.
-- Наступні кроки: провести пілот у 2–3 сервісах, зібрати відгуки, додати DB та можливість синхронізації календаря як пріоритетні фічі.
+## 9. Conclusion 🏁
+- **Summary:** The application addresses a specific pain point for small repair shops — simple, fast, and low-cost booking with basic management tools.
+- **Next steps:** Run pilots in 2–3 shops, gather feedback, and prioritize adding a database backend and calendar synchronization.
 
 ---
 

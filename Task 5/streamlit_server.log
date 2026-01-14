@@ -1,10 +1,10 @@
-nohup: ignoring input
 
 Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
 
 
   You can now view your Streamlit app in your browser.
 
-  URL: http://127.0.0.1:8501
+  Local URL: http://localhost:8501
+  Network URL: http://10.0.11.43:8501
+  External URL: http://4.210.177.135:8501
 
-  Stopping...
